@@ -1,4 +1,4 @@
-# portfolio
+# Portfolio
 
 [LIVE](https://igorgoledzinowski.github.io/portfolio/)
 
