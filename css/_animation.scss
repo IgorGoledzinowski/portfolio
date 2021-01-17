@@ -1,0 +1,24 @@
+@keyframes scroll-down-animation {
+    0% {
+        transform: translate(-50%, 0%);
+    }
+    50% {
+        transform: translate(-50%, -15%);
+    }
+    100% {
+        transform: translate(-50%, 0%);
+    }
+}
+
+@keyframes bg-logo-animation {
+    0% {
+        opacity: 0;
+        transform: scale(.5);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}

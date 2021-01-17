@@ -1,0 +1,184 @@
+@import "./rwd";
+
+@keyframes myAnimation {
+    0% {
+        opacity: 0;
+        left: 35%;
+    }
+
+    50% {
+        opacity: 0;
+        left: 35%;
+    }
+
+    100% {
+        opacity: 1;
+        left: 10%;
+    }
+}
+
+@keyframes myAnimation-mobile {
+    0% {
+        opacity: 0;
+        left: 70%;
+    }
+
+    50% {
+        opacity: 0;
+        left: 60%;
+    }
+
+    100% {
+        opacity: 1;
+        left: 50%;
+    }
+}
+
+@keyframes myAnimation2 {
+    0% {
+        width: 0%;
+        background-color: transparent;
+    }
+
+    100% {
+        width: 75%;
+        background-color: rgb(3, 135, 223);
+    }
+}
+
+
+.hero {
+    height: 100vh;
+    min-height: 700px;
+
+    &__title {
+        font-size: 6rem;
+        font-weight: 500;
+        line-height: 1.1;
+    }
+
+    &__bg {
+        position: absolute;
+        height: 80%;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        //background-color: rgb(3, 135, 223);
+        animation: myAnimation2 1s forwards;
+    }
+
+    &__container {
+        position: absolute;
+        font-family: 'Roboto', sans-serif;
+        top: 50%;
+        width: 42rem;
+        transform: translateY(-50%);
+        padding-left: 3rem;
+        border-left: .4rem solid $black;
+        animation: myAnimation 2s forwards;
+        cursor: default;
+    }
+
+    &__btn__wraper {
+        position: absolute;
+        left: 3rem;
+        width: 100%;
+
+        .btn {
+            padding: .7rem 1.2rem;
+            margin: .8rem .3rem;
+            font-size: .8rem;
+            border: none;
+            background-color: $black;
+            border: .2rem solid $black;
+            color: white !important;
+            text-transform: uppercase;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        .btn--outline {
+            color: $black !important;
+            border: .2rem solid $black !important;
+            background-color: #fff !important;
+            font-weight: 600;
+        }
+    }
+
+}
+
+@media (min-width: $xl) {
+    .hero {
+        &__title {
+            font-size: 9rem !important;
+        }
+
+        &__container {
+            width: 56rem !important;
+
+        }
+    }
+
+}
+
+@media (max-width: $xl) {
+    .hero {
+        &__title {
+            font-size: 7rem !important;
+        }
+
+        &__container {
+            width: 44rem !important;
+        }
+    }
+
+}
+
+
+@media (max-width: $sm) {
+    .hero {
+        &__title {
+            font-size: 6rem !important;
+        }
+
+        &__container {
+            width: 40rem !important;
+
+        }
+    }
+
+}
+
+@media (max-width: $xs) {
+    .hero {
+        &__title {
+            font-size: 4.8rem !important;
+        }
+
+        &__container {
+            width: 30rem !important;
+            padding-left: 1.5rem;
+            transform: translate(-50%, -50%);
+            animation: myAnimation-mobile 2s forwards;
+        }
+
+    }
+}
+
+@media (max-width: 400px) {
+    .hero {
+        &__title {
+            font-size: 4rem !important;
+        }
+
+        &__container {
+            width: 32rem !important;
+            padding-left: 2rem;
+            transform: translate(-45%, -50%);
+            animation: myAnimation-mobile 2s forwards;
+        }
+
+    }
+}

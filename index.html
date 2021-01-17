@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pl-Pl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>IGOR | Front-end developer</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="./node_modules/jquery/dist/jquery.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div id="wraper" class="overflow-hidden">
+		<header>
+			<nav>
+				<div class="top-navbar" id="nav">
+					<div class="navbar__item">
+						<a class="navbar-brand" id="logo" href="#"><img src="./img/logo7.svg" alt="logo"
+								style="width: 50px">
+						</a>
+					</div>
+				</div>
+				<div class="toggler" onclick="show()" id="toggle"><i class="fas fa-bars fa-2x" id="t-icon"></i></div>
+				<div class="side-nav" id="t3">
+					<ul>
+						<li><a class="link" href="#hero"><span class="side-nav__text"><i class="iconn fas fa-home mr-4 ml-5"></i>Home</span></a></li>
+						<li><a class="link" href="#projects"><span class="side-nav__text"><i class="fas fa-palette mr-4 ml-5"></i>Projects</span></a></li>
+						<li><a class="link" href="#about"><span class="side-nav__text"><i class="fas fa-user mr-4 ml-5"></i>About me</span></a></li>
+						<li><a class="link" href="#skills"><span class="side-nav__text"><i class="fas fa-tools mr-4 ml-5"></i>Skills</span></a></li>
+					</ul>
+					<div class="socials">
+						<div class="socials__wraper">
+							<div class="socials__icon"><a href="https://github.com/IgorGoledzinowski" target="_blank"><i
+										class="fab fa-github"></i></a></div>
+							<div class="socials__icon"><a
+									href="https://www.linkedin.com/in/igor-gol%C4%99dzinowski-487678192/"
+									target="_blank"><i class="fab fa-linkedin-in"></i></a></div>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<section id="hero">
+				<div class="hero container-fluid">
+					<div class="hero__bg"></div>
+					<div class="hero__container">
+						<div class="hero__title">JUNIOR FRONT-END DEVELOPER</div>
+						<div class="hero__btn__wraper my-2">
+							<a class="btn link" href="#projects">see my projects</a>
+							<a class="btn btn--outline" target="_blank" href="mailto:igor.goledzinowski@icloud.com">Contact me!</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="projects" class="mt-4">
+				<div class="container-fluid h-100">
+					<div class="row justify-content-center">
+						<div class="col-10" style="max-width: 1100px;">
+							<div class="row">
+									<div class="col-12 title text-left font-weight-bold my-1">RECENT PROJECTS</div>
+									<div class="col-12 subtitle text-left text-warning" style="margin-top: -1rem;">APPS / LANDING PAGES</div>
+										<div class="project col-12 col-md-6 text-center project1 border-bold" id="p1">
+											<div class="project__overlay">
+												<div class="project__desc text-light font-weight-light">
+													<div class="paragraph">
+														<div class="h3 paragraph__title m-1">Color Generator</div>
+														<div class="stack">
+															<span class="stack__tile">HTML</span>
+															<span class="stack__tile">CSS</span>
+															<span class="stack__tile">JS</span>
+														</div>
+														<div class="desc px-2 my-3 font-weight-light" style="font-size: 1rem;">
+															Pure Vanilla.js based app generating up to 5 random colors.
+														</div>
+														<div class="btn__wraper">
+															<a href="https://igorgoledzinowski.github.io/color-generator/index.html" target="_blank" class="project__btn btn">LIVE</a>
+															<a href="https://github.com/IgorGoledzinowski/color-generator" target="_blank" class="project__btn btn btn-sm">CODE</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="project col-12 col-md-6 text-center project2 border-bold border-bold-left">
+											<div class="project__overlay">
+												<div class="project__desc text-light font-weight-light">
+													<div class="paragraph">
+														<div class="h3 paragraph__title border">Lasles VPN</div>
+														<div class="stack border">
+															<span>HTML</span>
+															<span>CSS</span>
+															<span>JS</span>
+														</div>
+														<div class="border">
+															Landing page based on Figma UI project.
+														</div>
+														<div class="btn__wraper border">
+															<a href="https://igorgoledzinowski.github.io/landing-page-laslesVPN/" class="project__btn">LIVE</a>
+															<a href="https://github.com/IgorGoledzinowski/landing-page-laslesVPN" target="_blank" class="project__btn btn btn-sm">CODE</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="project col-12 col-md-6 text-center project4 border-bold border-bold-top">
+											<div class="project__overlay">
+												<div class="project__desc text-light font-weight-light">
+													<div class="paragraph">
+														<div class="h3 paragraph__title m-1">Fundacja Zwierzaki w Potrzebie</div>
+														<div class="stack">
+															<span class="stack__tile">HTML</span>
+															<span class="stack__tile">CSS</span>
+															<span class="stack__tile">JS</span>
+														</div>
+														<div class="desc px-2 my-3 font-weight-light" style="font-size: 1rem;">
+															Fundraising website build on Bootstrap 4.0 framework. 
+														</div>
+														<div class="btn__wraper">
+															<a href="https://igorgoledzinowski.github.io/Color-Generator/index.html" target="_blank" class="project__btn btn">LIVE</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="project col-12 col-md-6 text-center project4 border-bold border-bold-top border-bold-bottom border-bold-left border-bold-right">
+											
+												<div class="project__desc text-light font-weight-light">
+													<div class="paragraph">
+														<div class="h3 paragraph__title m-1">Fundacja Zwierzaki w Potrzebie</div>
+														<div class="stack">
+															<span class="stack__tile">HTML</span>
+															<span class="stack__tile">CSS</span>
+															<span class="stack__tile">JS</span>
+														</div>
+														<div class="desc px-2 my-3 font-weight-light" style="font-size: 1rem;">
+															Fundraising website build on Bootstrap 4.0 framework. 
+														</div>
+														<div class="btn__wraper">
+															<a href="https://igorgoledzinowski.github.io/Color-Generator/index.html" target="_blank" class="project__btn btn">LIVE</a>
+														</div>
+													</div>
+												</div>
+										</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="about" class="position-relative">
+				<div class="about container-fluid">
+					<div class="about__bg"></div>
+					<div class="row justify-content-center align-items-center mobile-bg p-0">
+						<div class="col-10" style="max-width: 1100px;">
+							<div class="row justify-content-center align-items-center">
+								<div class="col-12 col-lg-6 p-5 order-1 text-center" id="avatar">
+								</div>
+								<div class="col-12 col-lg-6 p-0 order-2 px-lg-2 px-md-4 about-me-container h-100">
+									<div class="title text-left mx-5 my-2 font-weight-bold">ABOUT ME</div>
+									<div class="mx-5 my-1 my-md-3">
+										<p class="font-weight-light m-0 p-0">
+											
+											My name is Igor Golędzinowski, I'm third year part-time IT student based in
+											Warsaw.
+											
+											
+											My journey with front-end development started about two years ago.
+											Since then I've creted some projects and spend a lot of time practising. 
+
+											
+											Currently I'm looking for an Intern or First Job as Junior Front-End
+											Developer/Webdeveloper around Warsaw or remotely.
+										</p>
+										<div class="btn-wraper text-center">
+											<button type="button" class="social-btn"
+												onclick="location.href='https://www.linkedin.com/in/igor-gol%C4%99dzinowski-487678192/'"><i
+													class="fab fa-linkedin-in"></i></button>
+											<button type="button" class="social-btn"
+												onclick="location.href='https://github.com/IgorGoledzinowski'"><i
+													class="fab fa-github"></i></button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--about me-->
+
+			<section id="skills" class="bg-light">
+				<!--<div class="title">SKILLS</div>-->
+				<div class="container-fluid h-100">
+					<div class="row justify-content-center align-items-center h-100">
+						<div class="col-10" style="max-width: 1100px;">
+							<div class="row justify-content-center">
+								<div class="col-12 text-center h-100">
+									<div class="row justify-content-center h-100 py-5">
+										<div class="col-12 title text-center font-weight-bold my-1">SKILLS</div>
+										<div class="col-12 col-md-6 m-3 m-md-0">
+											<div class="row mx-2">
+												<div class="col-12 h4 p-4">STACK:</div>
+												<div class="col-4 p-2 py-md-4"><i class="fab fa-html5 fa-4x"
+														style="color:#e34f26"></i></div>
+												<div class="col-4 p-2 py-md-4"><i class="fab fa-css3-alt fa-4x"
+														style="color: rgb(12, 102, 236);"></i></div>
+												<div class="col-4 p-2 py-md-4"><i class="fab fa-js fa-4x"
+														style="color:#f4df4f"></i>
+												</div>
+											</div>
+											<div class="row mx-2">
+												<div class="col-4 p-2 py-md-4"><i class="fab fa-sass fa-4x"
+														style="color:#cd6799"></i></div>
+												<div class="col-4 p-2 py-md-4"><i class="fab fa-npm fa-4x"
+														style="color:#cc3534"></i></div>
+												<div class="col-4 p-2 py-md-4"><i class="fab fa-bootstrap fa-4x" style="color:#38048d"></i></div>
+											</div>
+											<div class="row mx-2">
+												<div class="col-4 p-2 py-md-4"><i class="fab fa-git fa-4x" style="color: rgb(204, 60, 24);"></i></div>
+												<div class="col-4 p-2 py-md-4"><i class="fab fa-github fa-4x text-dark"></i></div>
+												<div class="col-4 p-2 py-md-4"><i class="fab fa-node fa-4x" style="color: rgb(28, 167, 40);"></i></div>
+											</div>
+										</div>
+										<div class="col-12 col-md-6">
+											<div class="row mx-2 justify-content-center">
+												<div class="col-12 h4 p-4">I'M FAMILIAR WITH:</div>
+												<ul>
+													<li>BEM methodology</li>
+													<li>RWD</li>
+													<li>Bootstrap 4</li>
+													<li>JS ES6+ / JQuery</li>
+													<li>Adobe Illustrator, Photoshop, Adobe XD (vector-graphic, cutting layouts)</li>
+													<li>SQL, PL/SQL, T-SQL</li>
+													<li>Basics of PHP, Wordpress</li>
+													<li>Adobe Illustrator, Photoshop (vector-graphic, cutting layouts)</li>
+												</ul>
+												</div>
+											<div class="row mx-2 justify-content-center">
+												<div class="col-12 h4 p-4">I'M LEARNIG:</div>
+												<div class="col-4 p-2 py-md-4"><i class="fab fa-react fa-4x"
+														style="color: rgb(33, 181, 250);"></i></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer id="footer">
+			<div class="footer container-fluid position-relative">
+				<div class="row justify-content-center align-items-center">
+					<div class="footer__container col-12 p-5 text-center">
+						<div class="footer__text position-absolute">
+							<div class="footer__h3 m-3">GET IN TOUCH</div>
+							<p style="font-size: 1.4rem;">Feel free to leave me a message via mail</p>
+							<button class="footer__btn text-uppercase text-right" type="button"><a href="mailto:igor.goledzinowski@icloud.com"><span class="mr-2"><i class="far fa-envelope"></i></span>Contact me</a></button>
+						</div>
+					</div>
+					
+					<div class="footer__copyright col-10 text-center text-white">
+						<div class="socials">
+							<span class="socials__btn"><i class="fab fa-linkedin-in"></i></span>
+							<span class="socials__btn"><i class="fab fa-github"></i></span>
+							<span class="socials__btn"><i class="fab fa-facebook-f"></i></span>
+						</div>
+						<div>
+							<small style="font-size: .8rem">Created by Igor Golędzinowski</small>
+						</div>
+						<small>&copy; Copyright 2020. All rights reserved</small>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script type="text/javascript" src="./js/smooth-scrolling.js"></script>
+	<script type="text/javascript" src="./js/nav.js"></script>
+	<script type="text/javascript" src="./js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+@import "./rwd";
+@import "./color-variables";
+
+@keyframes show-container {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes about-bg-animation {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+
+.container-animation {
+    animation: show-container 1s forwards;
+
+}
+
+.abg-animation {
+    animation: about-bg-animation 1s forwards;
+}
+
+#about{
+    opacity: 0;
+    transition: .2s ease-in-out;
+}
+.about{
+    min-height: 500px;
+    margin: 2rem 0; //title
+    padding: 3rem 0;
+    font-family: 'Roboto', sans-serif;
+    cursor: default;
+    &__bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        //background-color: rgb(1, 32, 58);
+        background-color:$black;
+    }
+    
+    p {
+        font-size: 1.2rem;
+        letter-spacing: -0.02rem;
+        margin: .5rem auto;
+        max-width: 65ch;
+        color: rgb(0, 0, 0);
+        font-weight: 300;
+        line-height: 1.8;
+        cursor: default;
+    }
+
+    hr {
+        width: 200px;
+    }
+
+    #avatar {
+        width: 30rem;
+        height: 30rem;
+        margin: 0 auto;
+        border-radius: 0;
+        background-image: url("../img/about-mee.svg"); //inne zdjecie
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .btn-wraper {
+        margin: 0;
+        padding: 1rem;
+        .social-btn {
+            padding: 0.4rem 0rem;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin: 0rem .25rem;
+            color: $black;
+            background-color: #fff;
+            border: .15rem solid $black;
+            transition: .2s ease;
+            &:hover {
+                color: #fff;
+                background-color: $black;
+            }
+        }
+    }
+
+}
+
+@media (max-width: $sm){
+    .about{
+        .about__bg {
+            width: 100%;
+        }
+        #avatar{
+            max-height: 300px !important;
+        }
+        p{
+            font-size: 1rem;
+        }
+        .about-me-container {
+            background-color: rgb(255, 255, 255) !important;
+        }
+    }
+}
+@media (max-width: $xs) {
+    #about-me {
+        min-height: 700px;
+        .mobile-bg {
+            background-color: white;
+
+        }
+
+        .avatar-container {
+            #avatar {
+                position: relative;
+                z-index: 1;
+                width: 200px;
+                height: 200px;
+
+            }
+        }
+    }
+}
