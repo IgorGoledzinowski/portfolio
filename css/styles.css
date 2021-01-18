@@ -143,6 +143,7 @@
 .hero {
   height: 100vh;
   min-height: 700px;
+  width: 100%;
 }
 
 .hero__title {
@@ -154,6 +155,7 @@
 .hero__bg {
   position: absolute;
   height: 80%;
+  min-height: 600px;
   right: 0;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -179,7 +181,6 @@
 .hero__btn__wraper {
   position: absolute;
   left: 3rem;
-  width: 100%;
 }
 
 .hero__btn__wraper .btn {
@@ -452,8 +453,8 @@
 }
 
 #projects .project2 {
-  background-image: url(../img/project_2.svg);
-  background-size: 400px auto !important;
+  background-image: url(../img/laslesVPN-preview.png);
+  background-size: contain;
 }
 
 #projects .project3 {
@@ -461,9 +462,8 @@
 }
 
 #projects .project4 {
-  background-image: url(../img/zwp.png);
-  background-size: 350px auto !important;
-  background-position: center bottom !important;
+  background-image: url(../img/zwp-preview.png);
+  background-size: contain !important;
 }
 
 #projects .project5 {
@@ -950,6 +950,10 @@ html div.row:before, html div.row:after, body div.row:before, body div.row:after
 
 html div.container:before, html div.container:after, body div.container:before, body div.container:after {
   display: none !important;
+}
+
+html section, body section {
+  width: 100% !important;
 }
 
 html section .title, body section .title {

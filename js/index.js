@@ -1,3 +1,26 @@
+const navBar = document.getElementById("nav");
+
+window.addEventListener("scroll", function() {
+    if(this.pageYOffset > 0) {
+      navBar.classList.add("mobile-animation");
+    }else{
+        navBar.classList.remove("mobile-animation");
+    }
+  })
+
+const aboutSec = document.getElementById("about");
+const aboutBg = document.getElementsByClassName("about__bg");
+
+const scrollList = document.addEventListener("scroll", () => {
+    if(scrollY > 500){
+        aboutSec.classList.add("container-animation");
+        aboutBg[0].classList.add("abg-animation");
+    } 
+})
+
+//
+
+
 const sideNavbar = document.getElementById('t3');
 const toggler = document.getElementById('toggle');
 

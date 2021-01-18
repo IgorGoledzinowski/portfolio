@@ -38,6 +38,7 @@ html, body {
     div.row:before, div.row:after { display: none !important}
     div.container:before, div.container:after { display: none !important}
     section {
+        width: 100% !important;
         .title {
             //klasa do styles
             color: $black;
