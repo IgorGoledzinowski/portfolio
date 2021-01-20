@@ -40,6 +40,7 @@
     .project4 {
         background-image: url(../img/zwp-preview.png);
         background-size: contain !important;
+        background-color: #ffffff;
     }
 
     .project5 {
@@ -61,7 +62,7 @@
             cursor: pointer;
             .project__overlay {
                 animation: overlay-animation .2s forwards;
-                background-color: rgba($color: #007bff, $alpha: 1);
+                background-color: rgba($color: #004379, $alpha: 1);
             }
         }
 
@@ -74,7 +75,7 @@
             padding: 0 !important;
             transition: .2s ease-in-out;
             overflow: hidden;
-
+            opacity: 1;
             &:before,
             &:after {
                 display: none !important;
@@ -108,7 +109,8 @@
                         margin: .2rem;
                         background-color: $black;
                         color: white;
-                        border: .1rem solid white;
+                        border-radius: 0;
+                        background-color: rgb(18, 18, 18);
                     }
                 }
             }
@@ -119,27 +121,52 @@
                 font-size: .9rem;
 
                 .stack {
-                    width: 7rem;
-                    margin: 0 auto;
+                    width: 100%;
+                    margin: .5rem auto 1rem auto;
 
                     &__tile {
                         font-size: .8rem;
-                        padding: .1rem 0rem;
+                        padding: .1rem .5rem;
                         margin: 0 .05rem;
+                        background-color: #000;
+                        border-radius: 5px;
+                        font-weight: 300;
+                    }
+                    .stack__tile--html{
+                        color: #fff !important;
+                        background-color: #e34c26 !important;
+                    }
+                    .stack__tile--js{
+                        color: #000 !important;
+                        background-color: #ffff00 !important;
+                    }
+                    .stack__tile--css{
+                        color: rgb(255, 255, 255) !important;
+                        background-color:#264de4  !important;
+                    }
+                    .stack__tile--scss{
+                        color: rgb(255, 255, 255) !important;
+                        background-color:#cc6699 !important;
+                    }
+                    .stack__tile--bootstrap{
+                        color: rgb(255, 255, 255) !important;
+                        background-color: #563d7c !important;
                     }
                 }
             }
 
         }
 
-        &__desc-container {
-            width: 100% !important;
-            padding: 1rem;
-
+        &__desc {
+            padding: .5rem;
             a {
                 &:hover {
                     text-decoration: none;
                 }
+            }
+            .desc{
+                font-size: .9rem !important;
+                font-weight: 300;
             }
 
         }

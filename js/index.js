@@ -54,5 +54,20 @@ const hideLogo = () => {
     scrolled > 0 ? logo.classList.add('d-none'): logo.classList.remove('d-none');
 }
 
-window.addEventListener('resize', sidenavStyle, false);
+const projectsBorder = () => {
+    const projects = document.querySelectorAll('.project');
+    if(window.innerWidth < 768){
+        projects[1].classList.remove("border-bold-left");
+        projects[1].classList.add("border-bold-top");
+    }else{
+        projects[1].classList.add("border-bold-left");
+        projects[1].classList.remove("border-bold-top");
+    }
+}
+
+window.addEventListener('resize', ()=>{
+    sidenavStyle();
+    projectsBorder();
+});
+window.onload = projectsBorder;
 window.addEventListener('scroll', hideLogo, false);

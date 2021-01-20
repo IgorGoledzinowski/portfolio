@@ -31,6 +31,9 @@
 .border-bold-top {
     border-top: none;
 }
+body{
+    min-width: 18.75rem; //300px
+}
 html, body {
     margin: 0 !important;
     padding: 0 !important;
@@ -40,13 +43,13 @@ html, body {
     section {
         width: 100% !important;
         .title {
-            //klasa do styles
             color: $black;
-            font-size: 2.5rem !important;
+            font-size: 2.5rem;
             margin: 1rem 0 2rem 0rem;
             letter-spacing: -1px;
             font-weight: 400;
             text-align: left;
+            overflow: hidden;
         }
         .subtitle{
             color: $black;
@@ -115,6 +118,7 @@ html, body {
                 }
                 .socials{
                     .socials__btn{
+                        position: relative;
                         display: inline-block;
                         padding: 0.4rem 0rem;
                         font-size: 1rem;
@@ -155,4 +159,10 @@ html, body {
 
 
 //done
-@media (max-width: $sm) {}
+@media (max-width: 400px) {
+    .title{
+        font-size: 2rem !important;
+        text-align: center !important;
+        border: 1px solid green;
+    }
+}

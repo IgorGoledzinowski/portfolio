@@ -3,34 +3,14 @@
 @keyframes myAnimation {
     0% {
         opacity: 0;
-        left: 35%;
-    }
-
-    50% {
-        opacity: 0;
-        left: 35%;
+        //left: 35%;
+        top: 40%;
     }
 
     100% {
         opacity: 1;
-        left: 10%;
-    }
-}
-
-@keyframes myAnimation-mobile {
-    0% {
-        opacity: 0;
-        left: 70%;
-    }
-
-    50% {
-        opacity: 0;
-        left: 60%;
-    }
-
-    100% {
-        opacity: 1;
-        left: 50%;
+        //left: 10%;
+        top: 50%;
     }
 }
 
@@ -51,10 +31,12 @@
     height: 100vh;
     min-height: 700px;
     width: 100%;
+
     &__title {
         font-size: 6rem;
         font-weight: 500;
         line-height: 1.1;
+        overflow: hidden;
     }
 
     &__bg {
@@ -70,18 +52,20 @@
     &__container {
         position: absolute;
         font-family: 'Roboto', sans-serif;
+        left: 8rem;
         top: 50%;
         width: 42rem;
         transform: translateY(-50%);
         padding-left: 3rem;
         border-left: .4rem solid $black;
-        animation: myAnimation 2s forwards;
+        animation: myAnimation 1s forwards;
         cursor: default;
     }
 
     &__btn__wraper {
         position: absolute;
         left: 3rem;
+
         .btn {
             padding: .7rem 1.2rem;
             margin: .8rem .3rem;
@@ -107,7 +91,7 @@
 
 }
 
-@media (min-width: $xl) {
+/*@media (min-width: $xl) {
     .hero {
         &__title {
             font-size: 9rem !important;
@@ -115,11 +99,10 @@
 
         &__container {
             width: 56rem !important;
-
         }
     }
 
-}
+}*/
 
 @media (max-width: $xl) {
     .hero {
@@ -143,23 +126,40 @@
 
         &__container {
             width: 40rem !important;
-
+            left: 4rem;
         }
     }
 
 }
 
+//767px
 @media (max-width: $xs) {
     .hero {
         &__title {
             font-size: 4.8rem !important;
+            line-height: 5.5rem;
         }
 
         &__container {
-            width: 30rem !important;
+            width: 28rem !important;
+            left: 2rem;
             padding-left: 1.5rem;
-            transform: translate(-50%, -50%);
-            animation: myAnimation-mobile 2s forwards;
+        }
+
+    }
+}
+
+@media (max-width: 500px) {
+    .hero {
+        &__title {
+            font-size: 4.2rem !important;
+        }
+
+        &__container {
+            width: 100% !important;
+            left: 0;
+            padding-left: 1.5rem;
+            border-left: none;
         }
 
     }
@@ -168,14 +168,29 @@
 @media (max-width: 400px) {
     .hero {
         &__title {
-            font-size: 4rem !important;
+            font-size: 3rem !important;
+            font-weight: 600;
+            line-height: 4.5rem;
+            padding: 20px;
         }
 
         &__container {
-            width: 32rem !important;
-            padding-left: 2rem;
-            transform: translate(-45%, -50%);
-            animation: myAnimation-mobile 2s forwards;
+            padding-left: 0rem;
+        }
+
+        &__btn__wraper {
+            width: 100%;
+            left: 0;
+            text-align: center;
+
+            .btn {
+                padding: .5rem 1rem;
+                margin: .6rem .1rem;
+                font-size: .8rem;
+                border: none;
+                border: .2rem solid $black;
+                text-transform: uppercase;
+            }
         }
 
     }
